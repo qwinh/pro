@@ -9,7 +9,7 @@ class EntryDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Find the entry that matches the ID passed from Person A's router
+    // Find the entry that matches the ID passed to router
     final entry = mockEntries.firstWhere(
       (e) => e.id == entryId,
       orElse: () => JournalEntry(
@@ -28,7 +28,7 @@ class EntryDetailScreen extends StatelessWidget {
             icon: Icon(entry.isLiked ? Icons.favorite : Icons.favorite_border),
             color: entry.isLiked ? Colors.red : null,
             onPressed: () {
-              // Later we will implement state management here
+              // State management stuff
             },
           ),
         ],

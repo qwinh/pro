@@ -8,7 +8,6 @@ void main() {
   runApp(const MyApp());
 }
 
-// ROUTER SETUP - CRITICAL FOR SCORING
 final GoRouter _router = GoRouter(
   routes: [
     GoRoute(

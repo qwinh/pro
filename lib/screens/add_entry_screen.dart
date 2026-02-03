@@ -79,7 +79,7 @@ class _AddEntryScreenState extends State<AddEntryScreen> {
               ),
               const SizedBox(height: 16),
 
-              // Tag Manager (Simple Version)
+              // Tag Manager
               Row(
                 children: [
                   Expanded(

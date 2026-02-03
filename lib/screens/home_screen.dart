@@ -18,10 +18,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Moments'),
+        title: const Text('Journal'),
         centerTitle: true,
       ),
-      // FAB to navigate to Person B's "Add Screen"
+      // FAB to navigate to "Add Screen"
       floatingActionButton: FloatingActionButton(
         onPressed: () => context.go('/add'),
         child: const Icon(Icons.add),
@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   if (entry.isLiked) const Icon(Icons.favorite, color: Colors.red, size: 16),
                 ],
               ),
-              // Navigate to Person B's "Detail Screen"
+              // Navigate to "Detail Screen"
               onTap: () => context.go('/detail/${entry.id}'),
             ),
           );
