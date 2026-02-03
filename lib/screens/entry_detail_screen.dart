@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/journal_entry.dart';
+import 'package:intl/intl.dart';
 
 class EntryDetailScreen extends StatelessWidget {
   final String entryId;
